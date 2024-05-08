@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Libly</title>
+	<link href="/stylesheet/landingPage.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="heroSection">
+		<video autoplay muted loop class="backgroundVideo">
+			<source src="/video/libly(2).mp4">
+		</video>
+		<div class="navButtons">
+			<a href="#features">Features</a>
+			<a href="#aboutUs">About Us</a>
+		</div>
+		<div class="tagline">
+			<h1>
+				Libly
+			</h1>
+			<p>Explore, Read, Connect...</p>
+			<a href="https://usernet.tech" class="liblyLink">Visit<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 20"><path style="fill:#ffffff" d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right"/></svg></a>
+		</div>
+	</div>
+	<div id="features" class="">
+		<h2>Features</h2>
+		<div class="slider">
+			<div class="slideContainer">
+				<input type="radio" name="radioBtn" id="radio-1"><input type="radio" name="radioBtn" id="radio-2"><input type="radio" name="radioBtn" id="radio-3">
+				<div class="slides firstSlide" id="slide-1">
+					<img src="/pictures/beautiful-rendering-dating-app-concept.png" alt="Beautiful rendering of a dating app concept">
+					<div class="slidesText">
+						<p>From classic literature to contemporary bestsellers, Libly allows you to curate and organize your favorite reads effortlessly.</p>
+						<p>Explore new genres, discover hidden gems, and seamlessly bookmark books for future reading pleasure.</p>
+						</div>
+				</div>
+				<div class="slides" id="slide-2">
+					<img src="/pictures/front-view-friends-relaxing-outdoors.jpg" alt="Beautiful rendering of a dating app concept">
+				<div class="slidesText">
+					<p>Discover a captivating book that you can't wait to share?</p>
+					<p>With Libly's quick share feature, spreading the word is effortless. Share links to intriguing reads with friends, family, and your favorite online communities with just a click.</p>
+				</div>
+
+				</div>
+				<div class="slides" id="slide-3">
+					<img src="/pictures/20066097_6192690.jpg" alt="Beautiful rendering of a dating app concept">
+					<div class="slidesText">
+						<p>Had to leave the app suddenly? No need to worry. With our enhanced engine, you'll seamlessly pick up right where you left off.</p>
+					</div>
+
+				</div>
+				<div class="autoNav">
+					<div class="automatic-btn-1"></div>
+					<div class="automatic-btn-2"></div>
+					<div class="automatic-btn-3"></div>
+				</div>
+				<div class="navigation">
+					<label for="radio-1" class="manual-btn"></label>
+					<label for="radio-2" class="manual-btn"></label>
+					<label for="radio-3" class="manual-btn"></label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="secContent">
+		<h2>How it works</h2>
+	</div> -->
+	<div id="aboutUs" class="secContent">
+		<h2>About Us</h2>
+		<div class="styles first"></div>
+		<div class="styles second"></div>
+		<div class="styles third"></div>
+		<div class="styles fourth"></div>
+		<div class="texts">
+			<P>In today's fast-paced world, the art of reading seems to be fading away, with fewer people taking the time to delve into the treasure trove of knowledge stored in books. However, Libly is here to change that narrative. Libly isn't just another platform; it's a beacon of hope for readers everywhere.
+				</p>
+				<p>At Libly, we're on a mission to reignite the passion for reading by providing a vibrant and engaging platform where readers can not only discover captivating books but also connect with fellow book enthusiasts. Think of it as a virtual haven where bookworms can gather, exchange thoughts, and dive into the fascinating worlds created by authors.
+				</p>
+				<p>Gone are the days when people believed that the best way to hide something was to bury it in a book. Libly debunks this myth by celebrating the profound wisdom and invaluable information found within the pages of books. We believe that every book holds a unique story waiting to be explored, and through Libly, we aim to make that journey more accessible and enjoyable for everyone.
+				</p>
+				<p>
+					Join us at Libly and let's rediscover the magic of reading together.
+				</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var counter = 1;
+		setInterval(()=> {
+			document.getElementById('radio-' + counter).checked = true;
+			counter++;
+			if (counter > 3) {
+				counter = 1;
+			}
+		}, 5000)
+	</script>
+</body>
+</html>
